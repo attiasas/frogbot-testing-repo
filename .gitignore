@@ -1,0 +1,19 @@
+# IDEs
+.idea
+.vscode
+*.iml
+
+# Test files
+testdata/go/project1/go.sum
+testdata/go/tmp
+tmp
+out
+dist
+demo/node_modules
+
+# Vim
+*~
+*.swp
+
+# IOS
+*.DS_Store
