@@ -9,7 +9,7 @@ testdata/go/tmp
 tmp
 out
 dist
-demo/node_modules
+node_modules
 
 # Vim
 *~
