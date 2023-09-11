@@ -3,6 +3,7 @@
 .vscode
 *.iml
 
+
 # Test files
 testdata/go/project1/go.sum
 testdata/go/tmp
