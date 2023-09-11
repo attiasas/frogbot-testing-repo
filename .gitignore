@@ -3,6 +3,7 @@
 .vscode
 *.iml
 
+
 # Test files
 testdata/go/project1/go.sum
 testdata/go/tmp
@@ -17,3 +18,8 @@ demo/node_modules
 
 # IOS
 *.DS_Store
+
+*.log
+*.pot
+*.pyc
+local_settings.py
