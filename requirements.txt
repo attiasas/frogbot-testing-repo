@@ -1,0 +1,121 @@
+{
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "JFrog Applicability Scanner",
+                    "rules": [
+                        {
+                            "id": "applic_CVE-2019-19844",
+                            "fullDescription": {
+                                "text": "The scanner checks whether Django's vulnerable \"Password Reset\" functionality is enabled, by checking for any of the following include statements inside a `urlpatterns` assignment -\n\n* `include(\"accounts.urls\")`\n* `include(\"django.contrib.auth.urls\")`",
+                                "markdown": "The scanner checks whether Django's vulnerable \"Password Reset\" functionality is enabled, by checking for any of the following include statements inside a `urlpatterns` assignment -\n\n* `include(\"accounts.urls\")`\n* `include(\"django.contrib.auth.urls\")`"
+                            },
+                            "name": "CVE-2019-19844",
+                            "shortDescription": {
+                                "text": "Scanner for CVE-2019-19844"
+                            }
+                        },
+                        {
+                            "id": "applic_CVE-2019-6975",
+                            "fullDescription": {
+                                "text": "The scanner checks whether any of the following vulnerable functions are called:\n\n* `numberformat.format` with external input to its 1st (`number`) argument.\n* `defaultfilters.floatformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.filesizeformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.intcomma` with external input to its 1st (`number`) argument.",
+                                "markdown": "The scanner checks whether any of the following vulnerable functions are called:\n\n* `numberformat.format` with external input to its 1st (`number`) argument.\n* `defaultfilters.floatformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.filesizeformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.intcomma` with external input to its 1st (`number`) argument."
+                            },
+                            "name": "CVE-2019-6975",
+                            "shortDescription": {
+                                "text": "Scanner for CVE-2019-6975"
+                            }
+                        },
+                        {
+                            "id": "applic_CVE-2020-7471",
+                            "fullDescription": {
+                                "text": "The scanner checks whether the vulnerable function `StringAgg` is called.",
+                                "markdown": "The scanner checks whether the vulnerable function `StringAgg` is called."
+                            },
+                            "name": "CVE-2020-7471",
+                            "shortDescription": {
+                                "text": "Scanner for CVE-2020-7471"
+                            }
+                        },
+                        {
+                            "id": "applic_CVE-2020-9402",
+                            "fullDescription": {
+                                "text": "The scanner checks whether the vulnerable module `django.contrib.gis` is imported.",
+                                "markdown": "The scanner checks whether the vulnerable module `django.contrib.gis` is imported."
+                            },
+                            "name": "CVE-2020-9402",
+                            "shortDescription": {
+                                "text": "Scanner for CVE-2020-9402"
+                            }
+                        },
+                        {
+                            "id": "applic_CVE-2023-30861",
+                            "fullDescription": {
+                                "text": "The scanner checks whether the vulnerable configuration `flask.session.permanent` is set to `True`.",
+                                "markdown": "The scanner checks whether the vulnerable configuration `flask.session.permanent` is set to `True`."
+                            },
+                            "name": "CVE-2023-30861",
+                            "shortDescription": {
+                                "text": "Scanner for CVE-2023-30861"
+                            }
+                        }
+                    ],
+                    "version": "APPLIC_SCANNERv0.2.5.1"
+                }
+            },
+            "invocations": [
+                {
+                    "executionSuccessful": true,
+                    "arguments": [
+                        "/Users/assafa/.jfrog/dependencies/analyzerManager/ca_scanner/applicability_scanner",
+                        "scan",
+                        "/var/folders/xv/th4cksxn7jv9wjrdnn1h4tj00000gq/T/jfrog.cli.temp.-1693935039-1608939734/config.yaml"
+                    ],
+                    "workingDirectory": {
+                        "uri": "file:///Users/assafa/.jfrog/dependencies/analyzerManager"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "message": {
+                        "text": "The scanner checks whether Django's vulnerable \"Password Reset\" functionality is enabled, by checking for any of the following include statements inside a `urlpatterns` assignment -\n\n* `include(\"accounts.urls\")`\n* `include(\"django.contrib.auth.urls\")`"
+                    },
+                    "kind": "pass",
+                    "ruleId": "applic_CVE-2019-19844"
+                },
+                {
+                    "message": {
+                        "text": "The scanner checks whether any of the following vulnerable functions are called:\n\n* `numberformat.format` with external input to its 1st (`number`) argument.\n* `defaultfilters.floatformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.filesizeformat` with external input to its 1st (`number`) argument.\n* `defaultfilters.intcomma` with external input to its 1st (`number`) argument."
+                    },
+                    "kind": "pass",
+                    "ruleId": "applic_CVE-2019-6975"
+                },
+                {
+                    "message": {
+                        "text": "The scanner checks whether the vulnerable function `StringAgg` is called."
+                    },
+                    "kind": "pass",
+                    "ruleId": "applic_CVE-2020-7471"
+                },
+                {
+                    "message": {
+                        "text": "The scanner checks whether the vulnerable module `django.contrib.gis` is imported."
+                    },
+                    "kind": "pass",
+                    "ruleId": "applic_CVE-2020-9402"
+                },
+                {
+                    "message": {
+                        "text": "The scanner checks whether the vulnerable configuration `flask.session.permanent` is set to `True`."
+                    },
+                    "kind": "pass",
+                    "ruleId": "applic_CVE-2023-30861"
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0",
+    "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/cos02/schemas/sarif-schema-2.1.0.json"
+}
