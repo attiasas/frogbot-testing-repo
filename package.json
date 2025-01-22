@@ -1,0 +1,13 @@
+{
+    "name": "keytar-project", 
+    "version": "1.0.0",
+    "dependencies": {
+        "keytar": "7.9.0",
+        "lightweight": "^0.1.0",
+    	"underscore": "^1.13.6",
+        "cors.js": "0.0.1-security"
+    },
+    "scripts": {
+        "build": "npm install"
+    }
+}
